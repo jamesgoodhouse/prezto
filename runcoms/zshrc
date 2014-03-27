@@ -12,3 +12,8 @@ fi
 
 # Customize to your needs...
 
+alias obey="cd ~/Projects/External/Obey/Code"
+alias v="vim"
+alias be="bundle exec"
+alias pjs="cd ~/Projects"
+alias vag="vagrant"
