@@ -25,3 +25,4 @@ chruby ruby-2.5
 
 export GO111MODULE=on
 
+. "/Users/jgoodhouse/.secrets.sh"
