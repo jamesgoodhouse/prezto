@@ -9,3 +9,10 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+### newrelic-env -- provides shell init for New Relic brew apps
+if [ -d /Users/jgoodhouse/.newrelic-env.d ]; then
+  for file in $(/bin/ls /Users/jgoodhouse/.newrelic-env.d/*.sh); do
+    . $file;
+  done
+fi

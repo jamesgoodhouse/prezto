@@ -10,4 +10,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+export PATH="$HOME/go/bin:$PATH"
+
 # Customize to your needs...
+alias ap="ansible-playbook"
+alias dev="cd $HOME/Development"
+alias be='bundle exec'
+alias tf='terraform'
+alias v='nvim'
+alias vag="vagrant"
+alias vi='nvim'
+
+chruby ruby-2.5
+
+export GO111MODULE=on
+
